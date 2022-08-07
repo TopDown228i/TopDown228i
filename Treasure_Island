@@ -1,0 +1,68 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print ("Ahoy there matey! Welcome to Treasure Island. Your mission is to find the treasure.\n")
+print ("To get started on your journey, choose to leave this building by through the front door or back door: \n")
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+direction = input("Enter 'front' or 'back': ")
+direction1 = direction.lower()
+print("")
+if direction1 == "front":
+  print ("Sorry, there is a mob of pirates out the front door who take you prisoner. The game is over!")
+else:
+  print ("You made it out alive. Wait, what is that in the distance?")
+  print ("Oh no! A 50 ft lizard is just ahead")
+
+  print ("The lizard is coming your way. What do you do?")
+  print ("")
+  print ("You have a cell phone and a time machine...think fast...which do you use?")
+  usetool = input("Enter 'cell phone' or 'time machine': ")
+  print("")
+  if usetool == "cell phone":
+    print("")
+    print ("Did you really think using your phone would help save you. The game is over!")
+  else:
+    print("")
+    print("Great choice! You jumped to the island with the treasure!")
+    print("")
+    print ("Now for the final challenge. Before you are three objects on a table.\n")
+    print ("The first is a button, the second is a switch, and the last is a box with a toy surprise. \n")
+    final_choice = input("what will it be? Enter 'button', 'toy', or 'switch': ")
+    if final_choice == "button":
+      print("")
+      print ("Blimey, shiver me timbers. The button caused an explosion and the treasure is lost. Game over!")
+    elif final_choice == "toy":
+      print("")
+      print ("Really! Did you think this toy had map that would lead you to the treasure?")
+      print ("Sorry, Matey; the game is over!")
+    else:
+      print("")
+      print ("Ah, the coffers at last!")
+      print ("Choosing the 'switch' was great decision")
+      print ("You win!!!!!")
+           
+  
+                       
